@@ -1,0 +1,26 @@
+// Icon sprite configuration
+
+.comments-icon {
+  background-image: url('/images/icon-sprite.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+}
+
+.ups-icon {
+  background-image: url('/images/icon-sprite.png');
+  background-position: 0px -17px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+}
+
+.downs-icon {
+  background-image: url('/images/icon-sprite.png');
+  background-position: 0px -33px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+}
+

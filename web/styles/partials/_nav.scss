@@ -1,0 +1,24 @@
+// Navbar styling
+.navbar {
+  height: $navbarHeight;
+}
+
+.navbar-default {
+  background-color: $themeColorDark;
+
+  .navbar-brand {
+    color: $themeColorLight;
+  }
+
+  .navbar-form {
+    border: none;
+    height: $navbarHeight;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: $screenSmMax) {
+      margin: auto;
+    }
+  }
+}
+

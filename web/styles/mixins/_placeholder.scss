@@ -1,0 +1,10 @@
+// Customize placeholder
+
+@mixin placeholder {
+  &.placeholder {@content}
+  &:-moz-placeholder {@content}
+  &::-moz-placeholder {@content}
+  &::-webkit-input-placeholder {@content}
+  &::-ms-input-placeholder {@content}
+}
+

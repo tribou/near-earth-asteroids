@@ -1,0 +1,7 @@
+*.log
+node_modules
+*.swp
+coverage.html
+.DS_Store
+
+bundle*.js

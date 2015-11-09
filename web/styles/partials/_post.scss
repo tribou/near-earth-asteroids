@@ -1,0 +1,66 @@
+// Post styling
+
+.post {
+  border-bottom: 1px solid $themeColorBorder;
+  font-size: $fontLarge;
+  min-height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    background-color: $themeColorLight;
+    cursor: pointer;
+  }
+
+  .post-attributes {
+    color: gray;
+    height: 20px;
+    font-size: $fontSmall;
+    padding-top: 5px;
+
+    .post-comments {
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 15px;
+
+    }
+
+    .post-ups {
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 15px;
+
+    }
+
+    .post-downs {
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 15px;
+
+    }
+  }
+
+  .post-author {
+    color: $themeColorDark;
+    padding-top: 5px;
+  }
+
+  .post-title {
+  }
+
+  .profile-image {
+    height: 100%;
+    width: 90px;
+
+    img {
+      border: 2px solid $themeColorBorder;
+      height: 90px;
+      object-fit: cover;
+      overflow: hidden;
+      width: 100%;
+
+      @include radius(90px);
+    }
+  }
+}
+

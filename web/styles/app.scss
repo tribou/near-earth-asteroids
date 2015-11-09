@@ -1,0 +1,34 @@
+// App index for sass files
+
+// Custom variables that span across multiple partials
+$fontLarge: 1.2em;
+$fontSmall: .7em;
+$navbarHeight: 50px;
+$themeColorBorder: #DBDCEC;
+$themeColorDark: #838388;
+$themeColorLight: #FFFFFF;
+
+// Breakpoints
+$screenSm: 768px;
+$screenSmMax: $screenSm - 1;
+
+// Import mixins
+@import "mixins/placeholder";
+@import "mixins/radius";
+@import "mixins/transition";
+
+// Import partials
+@import "partials/modal";
+@import "partials/icons";
+@import "partials/nav";
+@import "partials/search";
+@import "partials/table";
+
+
+// Custom app-level styling
+body {
+  background-color: $themeColorLight;
+  font-family: Lato, sans-serif;
+  padding-top: $navbarHeight;
+}
+

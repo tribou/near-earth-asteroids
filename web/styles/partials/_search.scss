@@ -1,0 +1,35 @@
+// Search box styling
+
+// Private Variables
+$_searchHeight: 25;
+$_marginSize: ($navbarHeight - $_searchHeight) / 2;
+
+// Search class applied to the input[type=text]
+.search {
+  border: none;
+  box-shadow: none;
+  color: $themeColorDark;
+  height: $_searchHeight + px;
+  line-height: $_searchHeight + px;
+  margin-top: $_marginSize;
+  margin-bottom: $_marginSize;
+  outline: none;
+  padding: 0 0 0 12px;
+  width: 100px;
+
+  @include placeholder {
+    color: $themeColorDark;
+  }
+
+  @include radius(90px);
+  @include transition(width, .4s, ease, 0s);
+
+  &:focus {
+    width: 250px;
+
+    @media (max-width: $screenSmMax) {
+      width: 200px;
+    }
+  }
+}
+
